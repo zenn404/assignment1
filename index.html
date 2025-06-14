@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Pet Store</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Pets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="featured">
+            <h2>Our Wonderful Pets</h2>
+
+            <h3><img src="https://png.pngtree.com/png-clipart/20231021/original/pngtree-cute-cartoon-dog-png-file-png-image_13395067.png" alt="Colored dog icon" style="width: 35px; vertical-align: middle; margin-right: 10px;">Dogs</h3>
+            <div class="pet-list">
+                <div class="pet">
+                    <img src="animals/petshop-img/dog.jpg" alt="Cute Golden Retriever Puppy">
+                    <p>Sunny - Golden Retriever</p>
+                    <button onclick="adoptPet()">Adopt Now</button>
+                </div>
+                <div class="pet">
+                    <img src="animals/petshop-img/dogs/dog01.jpg" alt="Cute Beagle Puppy">
+                    <p>Max - Beagle</p>
+                    <button onclick="adoptPet()">Adopt Now</button>
+                </div>
+                <div class="pet">
+                    <img src="animals/petshop-img/dogs/dog02.jpg" alt="Cute Yorkshire Terrier Puppy">
+                    <p>Coco - Yorkshire Terrier</p>
+                    <button onclick="adoptPet()">Adopt Now</button>
+                </div>
+                <div class="pet">
+                    <img src="animals/petshop-img/dogs/dog03.jpg" alt="Cute Jack Russell Terrier Puppy">
+                    <p>Gizmo - Jack Russell Terrier</p>
+                    <button onclick="adoptPet()">Adopt Now</button>
+                </div>
+            </div>
+
+            <h3><img src="https://png.pngtree.com/png-clipart/20220626/original/pngtree-pink-cute-cat-icon-animal-png-yuri-png-image_8188672.png" alt="Colored cat icon" style="width: 35px; vertical-align: middle; margin-right: 10px;">Cats</h3>
+            <div class="pet-list">
+                <div class="pet">
+                    <img src="animals/petshop-img/cats/cat01.jpg" alt="Cute Tabby Cat">
+                    <p>Luna - Tabby Cat</p>
+                    <button onclick="adoptPet()">Adopt Now</button>
+                </div>
+                <div class="pet">
+                    <img src="animals/petshop-img/cats/cat02.jpg" alt="Cute Ginger Cat">
+                    <p>Oliver - Ginger Cat</p>
+                    <button onclick="adoptPet()">Adopt Now</button>
+                </div>
+                <div class="pet">
+                    <img src="animals/petshop-img/cats/cat03.jpg" alt="Cute Black Cat">
+                    <p>Smokey - Domestic Shorthair</p>
+                    <button onclick="adoptPet()">Adopt Now</button>
+                </div>
+                <div class="pet">
+                    <img src="animals/petshop-img/cat.webp" alt="Cute British Shorthair Cat">
+                    <p>Daisy - British Shorthair</p>
+                    <button onclick="adoptPet()">Adopt Now</button>
+                </div>
+            </div>
+
+            <h3><img src="https://www.pngall.com/wp-content/uploads/13/Capybara-PNG-Photos.png" alt="Capybara icon" style="width: 45px; vertical-align: middle; margin-right: 10px;">Capybaras</h3>
+            <div class="pet-list">
+                <div class="pet">
+                    <img src="animals/petshop-img/capybaras/capybara01.jpg" alt="Cute Capybara">
+                    <p>Patches - Capybara</p>
+                    <button onclick="adoptPet()">Adopt Now</button>
+                </div>
+                <div class="pet">
+                    <img src="animals/petshop-img/capybaras/capybara02.jpg" alt="Cute Capybara">
+                    <p>Willow - Capybara</p>
+                    <button onclick="adoptPet()">Adopt Now</button>
+                </div>
+            </div>
+
+            <h3><img src="https://cdn-icons-png.flaticon.com/512/4804/4804048.png" alt="Bird icon" style="width: 35px; vertical-align: middle; margin-right: 10px;">Birds</h3>
+            <div class="pet-list">
+                <div class="pet">
+                    <img src="animals/petshop-img/birds/bird01.jpg" alt="Cute Green Parakeet">
+                    <p>Pip - Green Parakeet</p>
+                    <button onclick="adoptPet()">Adopt Now</button>
+                </div>
+                <div class="pet">
+                    <img src="animals/petshop-img/birds/bird02.jpg" alt="Cute Blue Parakeet">
+                    <p>Sky - Blue Parakeet</p>
+                    <button onclick="adoptPet()">Adopt Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="map">
+            <div class='content'>
+                <h2>Pet Store</h2>
+                <p>123 Pet Lane,Animal City,AC 123456</p>
+                <p>Email:<strong>info@petstore.com</strong></p>
+                <p>Contact us at: <strong>info@petstore.com</strong></p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.7575783055627!2d100.83534157581495!3d13.611612686765753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d430e775155f9%3A0xf01923824353260!2sAssumption%20University%20Suvarnabhumi%20Campus!5e0!3m2!1sen!2sth!4v1749631062482!5m2!1sen!2sth" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
