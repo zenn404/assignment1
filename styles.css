@@ -1,25 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); 
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; 
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #e8f0f2;
+    background-color: #f4f4f4; 
     color: #333;
+    line-height: 1.6;
 }
 
+
 header {
-    background-color: #4682b4;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('animals/petshop-img/jumbotron.jpg') center/cover no-repeat; 
+    background-color: #6a994e; 
     padding: 30px 20px;
     color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     margin: 0;
     font-size: 2.8em;
     letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 nav {
@@ -36,7 +47,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #a7d9ef;
+    color: #c8edb8; 
 }
 
 .featured {
@@ -45,37 +56,78 @@ nav a:hover {
 
 h2 {
     font-size: 2.5em;
-    color: #36a4b5;
+    color: #4CAF50; 
     margin-bottom: 30px;
 }
 
 h3 {
     margin-top: 50px;
     margin-bottom: 25px;
-    color: #4682b4;
+    color: #6a994e; 
     font-size: 2.2em;
-    border-bottom: 2px solid #a7d9ef;
-    display: inline-block;
+    border-bottom: 2px solid #a7d9ef; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 10px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.filter-section {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #e6ffe6; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #c8edb8; 
+}
+
+.filter-section span {
+    font-weight: 600;
+    margin-right: 15px;
+    color: #4CAF50; 
+}
+
+.filter-section label {
+    margin: 0 10px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #555;
+}
+
+.filter-section input[type="checkbox"] {
+    margin-right: 5px;
+    transform: scale(1.1);
+    accent-color: #4CAF50; 
 }
 
 .pet-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap;
     margin-bottom: 60px;
+    padding: 0 20px;
 }
 
 .pet {
-    border: 1px solid #cce7ee;
+    border: 1px solid #cce7ee; 
     border-radius: 15px;
     padding: 25px;
     text-align: center;
     background-color: white;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    width: 220px;
+    width: auto;
+    max-width: 280px;
+    justify-self: center;
 }
 
 .pet:hover {
@@ -89,7 +141,7 @@ h3 {
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 15px;
-    border: 3px solid #36a4b5;
+    border: 3px solid #4CAF50; 
 }
 
 .pet p {
@@ -100,7 +152,7 @@ h3 {
 }
 
 button {
-    background-color: #1e90ff;
+    background-color: #6a994e; 
     color: white;
     padding: 12px 25px;
     border: none;
@@ -112,58 +164,53 @@ button {
 }
 
 button:hover {
-    background-color: #007bff;
+    background-color: #4CAF50; 
     transform: translateY(-2px);
 }
 
+.no-pets-message {
+    text-align: center;
+    grid-column: 1 / -1;
+    font-size: 1.2em;
+    color: #777;
+    padding: 30px;
+}
+
+
 footer {
-    background-color: #4682b4;
+    background-color: #6a994e; 
     margin-top: 50px;
     padding: 40px 20px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 30px;
     color: white;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
 footer .content {
+    flex: 1;
+    min-width: 280px;
     text-align: center;
 }
 
-footer .content h2,
-footer .content p {
-    animation: float 3s ease-in-out infinite;
-}
-
-footer .content p:nth-child(2) {
-    animation-delay: 0.5s;
-}
-
-footer .content p:nth-child(3) {
-    animation-delay: 1s;
-}
-
-footer .content p:nth-child(4) {
-    animation-delay: 1.5s;
-}
-
-
-footer h2 {
-    color: white;
+footer .content h2 {
+    color: white; 
     font-size: 2em;
     margin-bottom: 15px;
 }
 
-footer p {
+footer .content p {
     margin: 5px 0;
     font-size: 1em;
+    text-align: center;
 }
 
 footer strong {
-    color: #a7d9ef;
+    color: #c8edb8; 
 }
 
 .map {
@@ -171,15 +218,63 @@ footer strong {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    flex: 1;
+    min-width: 280px;
 }
 
 .map iframe {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
 }
 
 @keyframes float {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-5px); }
     100% { transform: translateY(0px); }
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+    nav a {
+        margin: 0 10px;
+        font-size: 1em;
+    }
+    .filter-section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 25px;
+    }
+    .filter-section label {
+        margin: 5px 0;
+        text-align: left;
+    }
+    .pet-list {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+    .pet {
+        width: 90%;
+        margin: 0 auto;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    footer .content, .map {
+        min-width: unset;
+        width: 100%;
+        text-align: center;
+    }
+    footer .content p {
+        text-align: center;
+    }
+    .map iframe {
+        width: 95%;
+    }
 }
